@@ -27,6 +27,7 @@ function getGreenRGBValue() {
     return (greenValue);
 }
 
+
 function getCompletedRGBValue() {
     let redValue = getRedRGBValue();
     let greenValue = getGreenRGBValue();
