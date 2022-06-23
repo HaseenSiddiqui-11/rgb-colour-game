@@ -59,4 +59,19 @@ function generateColours() {
     }
 };
 
-generateColours();
+function checkSquare(e) {
+    if (e.getAttribute("selectedSquare") == "true") {
+        let result = document.getElementById("result");
+        result.innerHTML = "You choose the correct square!";
+        
+        for (var i = 0; i < allSquares.length; i++) {
+            allSquares[i].removeAttribute("selectedSquare");
+            allSquares[i].style.backgroundColor = pickedColour;
+        }
+    }
+
+    else {
+       let result = document.getElementById("result"); 
+       result.innerHTML = "You choose the incorrect square!";
+    }
+}
