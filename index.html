@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB Colour Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="title-container">
+        <h1 class="title">RGB Colour Game</h1>
+        <h2 class="instructions-header">How do I Play?</h2>
+        <p class="instructions">You will be given six squares. Each square will have a colour.
+            You will also be given an RGB colour. <br> You can click on the square which you think,
+            it's colour matches with the RGB values you were given. <br>
+            <strong>Five</strong> of the squares, will have completly random RGB colour values, and <strong>one</strong>
+            will have the RGB colour values<br>you were given previously.
+        </p>
+    </div>
+
+    <hr>
+    <h3 id="rgb-colour">Your RGB Colour will be displayed here!</h3>
+    <div class="first-row">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+    </div>
+
+    <div class="second-row">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+    </div>
+
+    <button class="new-colours" onclick="generateColours()">Generate New Colours</button>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
